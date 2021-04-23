@@ -1,23 +1,17 @@
 /* eslint-disable react-native/no-inline-styles */
-// React Native Video Library to Play Video in Android and IOS
-// https://aboutreact.com/react-native-video/
 
-// import React in our code
 import React, {useState, useRef, useEffect} from 'react';
 
 import {Constants} from 'react-native-unimodules';
 
 import * as ScreenCapture from 'expo-screen-capture';
 
-// import all the components we are going to use
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
-//Import React Native Video to play video
 import Video from 'react-native-video';
 
 import video from './videos/video.mp4';
 
-//Media Controls to control Play/Pause/Seek and full screen
 import MediaControls, {PLAYER_STATES} from 'react-native-media-controls';
 
 const App = () => {
@@ -35,24 +29,20 @@ const App = () => {
   const [screenType, setScreenType] = useState('content');
 
   const onSeek = seek => {
-    //Handler for change in seekbar
     videoPlayer.current.seek(seek);
   };
 
   const onPaused = playerState => {
-    //Handler for Video Pause
     setPaused(!paused);
     setPlayerState(playerState);
   };
 
   const onReplay = () => {
-    //Handler for Replay
     setPlayerState(PLAYER_STATES.PLAYING);
     videoPlayer.current.seek(0);
   };
 
   const onProgress = data => {
-    // Video Player will progress continue even if it ends
     if (!isLoading && playerState !== PLAYER_STATES.ENDED) {
       setCurrentTime(data.currentTime);
     }
@@ -123,9 +113,6 @@ const App = () => {
     </View>
   );
 };
-
-// yarn start --reset-cache
-// 4. Remove the cache: rm -rf /tmp/metro-*
 
 export default App;
 
