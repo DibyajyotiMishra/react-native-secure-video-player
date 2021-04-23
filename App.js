@@ -7,6 +7,8 @@ import React, {useState, useRef, useEffect} from 'react';
 
 import {Constants} from 'react-native-unimodules';
 
+import * as ScreenCapture from 'expo-screen-capture';
+
 // import all the components we are going to use
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
@@ -20,7 +22,7 @@ import MediaControls, {PLAYER_STATES} from 'react-native-media-controls';
 
 const App = () => {
   useEffect(() => {
-    console.log(Constants.systemFonts);
+    ScreenCapture.preventScreenCaptureAsync();
   }, []);
 
   const videoPlayer = useRef(null);

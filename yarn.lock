@@ -3607,6 +3607,13 @@ expo-permissions@~12.0.1:
   resolved "https://registry.yarnpkg.com/expo-permissions/-/expo-permissions-12.0.1.tgz#5163c00d991bf565bf987354611628c298ddd0c4"
   integrity sha512-TtypNPPLG4SdVEKBlrArLLZIyhlhE+3B4dhz2HaY1Mve2rcvKE0C7z/e1WoUVU8+LgcdKoNGwg/wRVeCkxeEhg==
 
+expo-screen-capture@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/expo-screen-capture/-/expo-screen-capture-3.1.0.tgz#07f8cf4db9a4a6f6f8d7cc7e109c77892adb890b"
+  integrity sha512-hWzy2NMSu1LhJ21iHAd04z/TyYkEUJMW5QdkSS9jnOsTzSd2hdJT1gPVzwAezKjLcf+W944HJUMNT+ZOZBXWuw==
+  dependencies:
+    "@unimodules/core" "~7.1.0"
+
 extend-shallow@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-2.0.1.tgz#51af7d614ad9a9f610ea1bafbb989d6b1c56890f"

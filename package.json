@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "expo-screen-capture": "^3.1.0",
     "react": "17.0.1",
     "react-native": "0.64.0",
     "react-native-media-controls": "^2.3.0",
