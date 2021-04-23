@@ -3,7 +3,9 @@
 // https://aboutreact.com/react-native-video/
 
 // import React in our code
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
+
+import {Constants} from 'react-native-unimodules';
 
 // import all the components we are going to use
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
@@ -17,6 +19,10 @@ import video from './videos/video.mp4';
 import MediaControls, {PLAYER_STATES} from 'react-native-media-controls';
 
 const App = () => {
+  useEffect(() => {
+    console.log(Constants.systemFonts);
+  }, []);
+
   const videoPlayer = useRef(null);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
