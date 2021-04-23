@@ -12,5 +12,4 @@ OR
 
 **Scan this QR code:**
 
-![QR CODE](https://github.com/DibyajyotiMishra/react-native-secure-video-player
-/blob/develop/download.png?raw=true)
+![QR CODE](https://github.com/DibyajyotiMishra/react-native-secure-video-player/blob/develop/download.png?raw=true)
