@@ -3,7 +3,7 @@
 This makes use of react-native-video and expo-screen-capture. As a result we can prevent data leak in a way that users can neither take screenshots(only android) 
 nor can record their screens (available for both android and ios).
 
-**NOTE: The demo app available here runns only on android. iOS app is available only on request.**
+**NOTE: The demo app available here runs only on android. iOS app is available only on request.**
 
 
 **Try this out from the link below:**
